@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Página HTML</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+</head>
+<body>
 
+  <header>
+    <h1>Bem-vindo à minha página</h1>
+    <p>Aprendendo HTML com tags semânticas</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a> |
+    <a href="#ods">ODS</a> |
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre mim</h2>
+      <figure>
+        <img src="figs/perfil.jpg" alt="Minha Foto" width="200">
+        <figcaption>Foto de perfil</figcaption>
+      </figure>
+      <p>Olá! Meu nome é João e estou aprendendo desenvolvimento web.</p>
+    </section>
+
+    <section id="ods">
+      <h2>ODS que pretendo contribuir</h2>
+      <figure>
+        <img src="figs/ods.png" alt="Imagem ODS" width="300">
+        <figcaption>ODS 4 - Educação de Qualidade</figcaption>
+      </figure>
+      <ul>
+        <li>Trabalhar com educação tecnológica</li>
+        <li>Contribuir com acessibilidade digital</li>
+        <li>Desenvolver conteúdos educacionais online</li>
+      </ul>
+    </section>
+
+    <article>
+      <h2>Formulário de Contato</h2>
+      <form>
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="exemplo@email.com" required><br><br>
+
+        <label for="msg">Mensagem:</label><br>
+        <textarea id="msg" name="msg" rows="4" cols="30" placeholder="Escreva sua mensagem aqui"></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+      </form>
+    </article>
+  </main>
+
+  <footer id="contato">
+    <p>Entre em contato: <a href="mailto:joao@email.com">joao@email.com</a></p>
+    <p><i class="material-icons-outlined">favorite</i> 2025</p>
+  </footer>
+
+</body>
+</html>
